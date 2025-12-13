@@ -137,7 +137,7 @@ Install Pygame if necessary:
 pip install pygame
 ```
 
-###Running the Game
+### Running the Game
 1. Clone/Download this Repo
 2. Ensure all image files and music.mp3 are in the same directory as the Python file
 3. Run the game using
@@ -146,7 +146,7 @@ pip install pygame
 python SaveThePenguin.py
 ```
 
-##Controls
+## Controls
 -Arrow Keys: Move the Penguin
 -R: Restart the Game
 -Q: Quit the Game
