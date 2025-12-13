@@ -147,9 +147,9 @@ python SaveThePenguin.py
 ```
 
 ### Controls
--Arrow Keys: Move the Penguin
--R: Restart the Game
--Q: Quit the Game
+- Arrow Keys: Move the Penguin
+- R: Restart the Game
+- Q: Quit the Game
 
 ---
 ## Disclaimer
