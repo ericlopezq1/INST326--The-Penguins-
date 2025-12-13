@@ -180,8 +180,13 @@ class Game:
 
     def draw_health(self):
         """Draw health text."""
+        if self.penguin.health <= 20:
+            color = (255, 0, 0)   # red
+        else:
+            color = (255, 255, 255)  # white
+        
         text = self.font.render(
-            f"Health: {self.penguin.health}", True, (255, 255, 255)
+            f"Health: {self.penguin.health}", True, color
         )
         self.screen.blit(text, (10, 10))
 
@@ -213,13 +218,17 @@ class Game:
 
     def draw_game_over(self):
         """Draw game over screen."""
-        text = self.font.render(
-            "Game Over! Press R to Restart or Q to Quit",
-            True,
-            (255, 255, 255)
-        )
-        rect = text.get_rect(center=(self.width // 2, self.height // 2))
-        self.screen.blit(text, rect)
+        line1 = self.font.render("Game Over!", True, (255, 255, 255))
+        line2 = self.font.render("Press R to Restart or Q to Quit", True, (255, 255, 255))
+
+        spacing = 10  
+
+        line1_rect = line1.get_rect(center=(self.width // 2, self.height // 2 - (line1.get_height() // 2 + spacing)))
+        line2_rect = line2.get_rect(center=(self.width // 2, self.height // 2 + (line2.get_height() // 2)))
+
+        self.screen.blit(line1, line1_rect)
+        self.screen.blit(line2, line2_rect)
+
 
     def reset_game(self):
         """Reset game."""
@@ -276,4 +285,3 @@ class Game:
 
 if __name__ == "__main__":
     Game().run()
-
