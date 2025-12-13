@@ -12,7 +12,7 @@ class Penguin:
     def __init__(self, image_path, screen_width, screen_height, start_health=50):
         """Initialize penguin attributes."""
         original_image = pygame.image.load(image_path).convert_alpha()
-        self.image = pygame.transform.scale(original_image, (50, 50))
+        self.image = pygame.transform.scale(original_image, (75, 75))
 
         self.rect = self.image.get_rect(
             center=(screen_width // 2, screen_height - 80)
@@ -80,7 +80,7 @@ class Ship:
     def __init__(self, image_path, screen_width):
         """Initialize ship."""
         original_image = pygame.image.load(image_path).convert_alpha()
-        self.image = pygame.transform.scale(original_image, (40, 40))
+        self.image = pygame.transform.scale(original_image, (65, 65))
 
         self.rect = self.image.get_rect()
         self.speed = random.randint(3, 6)
