@@ -2,6 +2,7 @@ import pygame
 import random
 import sys
 
+pygame.mixer.init()
 
 class Penguin:
     """
@@ -157,6 +158,15 @@ class Game:
 
         self.ships = []
         self.spawn_wave()
+
+        #Add music in a cont. loop
+        try:
+            pygame.mixer.music.load("music.mp3")
+            pygame.mixer.music.set_volume(0.5)  # optional: adjust volume
+            pygame.mixer.music.play(loops=-1, fade_ms=2000)
+        except pygame.error as e:
+            print(f"Music file not found or could not play: {e}")
+
 
     def spawn_wave(self):
         """Spawn a wave of 1–3 ships."""
