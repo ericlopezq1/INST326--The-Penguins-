@@ -151,3 +151,12 @@ python SaveThePenguin.py
 -R: Restart the Game
 -Q: Quit the Game
 
+---
+## Disclaimer
+
+This project is a non-commercial, educational game created for academic purposes.
+
+The background music used in this project originates from *Club Penguin*, which is the property of The Walt Disney Company. All rights to the music belong to their respective owners. No copyright infringement is intended.
+
+This project is not monetized and is not affiliated with or endorsed by Disney or Club Penguin.
+
