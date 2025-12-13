@@ -146,7 +146,7 @@ pip install pygame
 python SaveThePenguin.py
 ```
 
-## Controls
+### Controls
 -Arrow Keys: Move the Penguin
 -R: Restart the Game
 -Q: Quit the Game
