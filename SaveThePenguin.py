@@ -155,10 +155,6 @@ class Game:
         self.ships = []
         self.spawn_wave()
 
-
-        self.ships = []
-        self.spawn_wave()
-
         #Add music in a cont. loop
         try:
             pygame.mixer.music.load("music.mp3")
